@@ -1,6 +1,7 @@
 """
 Code to Search your Preferred drive for
 files that are larger than 100 MB
+Saerches for my D:\ drive
 """
 
 from os.path import getsize
