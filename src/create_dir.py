@@ -22,7 +22,10 @@ from os import rename
 
 # Creates a directory
 def create_directory(name):
-    makedirs(pardir+"\\"+name)
+    if exists(pardir+"\\"+name):
+        print('Folder already exists... Cannot Overwrite this')
+    else:
+        makedirs(pardir+"\\"+name)
 
 
 # Deletes a directory
