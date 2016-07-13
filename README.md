@@ -10,5 +10,8 @@ This is the source folder of my addon python scripts which can be used by progra
 	1. This is an addon to programmers whenever they wanted to create , delete or move folders that contains data
 3. Image Grabber
 	1. This searches a query given as an input and download 10-12 images on that query from google images
+	2. This also has functionality to download wallpapers of    **   _full HD_** resolution, because it is
+	sometimes headache for user to download a couple of wallpapers because he doesn't have time to do this.
+	Actually i face this problem a lot. So that's why i have add this
 4. zipper
 	1. This script creates backup of all the code and content of your project into different directory
