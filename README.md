@@ -15,3 +15,5 @@ This is the source folder of my addon python scripts which can be used by progra
 	Actually i face this problem a lot. So that's why i have add this
 4. zipper
 	1. This script creates backup of all the code and content of your project into different directory
+5. Zero file finder
+    1. This script searches your driver for files of size zero bytes
