@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0fea4a902bd499c823a56098c6fe13c)](https://www.codacy.com/app/201551061/Cool_Projects?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yashLadha/Cool_Projects&amp;utm_campaign=Badge_Grade)
 # About Project
 This repository contains efforts of Students learning new concepts and implementing the concepts in Python or any other language.
 So It is requested that those who are interested in fishing out and developing the basics of programming , should also contribute.
