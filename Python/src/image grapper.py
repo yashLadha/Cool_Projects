@@ -6,7 +6,6 @@ from urllib.parse import urlencode
 from os import walk
 import json
 from os.path import curdir
-from urllib.request import urlretrieve
 from os.path import pardir
 from create_dir import create_directory
 
@@ -39,7 +38,7 @@ def image_grabber(ch):
         # print(sew.prettify())
         results = sew.findAll("div",{"class":"rg_meta"})
         for re in results:
-            link, Type = json.loads(re.text)["ou"] , json.loads(re.text)["ity"]
+            link, *Type = json.loads(re.text)["ou"] , json.loads(re.text)["ity"]
             images.append(link)
         counter = 0
         for re in images:
@@ -85,8 +84,9 @@ def image_grabber(ch):
 
     elif ch == 3:
         for folders, subfolder, files in walk(curdir):
-            for folder in subfolder:
-                print(folder)
+            for fold in folders:
+                for folder in subfolder:
+                    print(folder)
         return True
 
     elif ch == 4:
