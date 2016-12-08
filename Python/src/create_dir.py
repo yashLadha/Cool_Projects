@@ -1,15 +1,3 @@
-"""
-Code to directly use in file to
-create directory in home location
-
-Note:- I Have used python package so if you want
-to create in the main directory of your project use
-pardir+"\\"+name in functions
-
-All the folder operations are done on home
-project directory.
-"""
-
 from shutil import copytree
 from shutil import move
 from os import chdir

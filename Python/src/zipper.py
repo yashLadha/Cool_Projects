@@ -1,8 +1,3 @@
-"""
-Code to backup the contents of folder
-and create a zip file from that folder.
-"""
-
 from src.create_dir import move_folder
 from zipfile import ZipFile
 from os.path import abspath
@@ -15,13 +10,14 @@ from os.path import pardir
 def back_zip(folder):
     folder = abspath(folder)
     backup_zip = ZipFile('Backup_' + basename(folder)+'.zip', 'w')
-    for foldername, subfoldees, filenames in walk(folder):
+    for foldername, subfolders, filenames in walk(folder):
         backup_zip.write(foldername)
-        for filename in filenames:
-            newBase = 'Backup_'+basename(folder)
-            if filename.startswith(newBase) and filename.endswith('.zip'):
-                continue
-            backup_zip.write(join(foldername, filename))
+        for subs in subfolders:
+            for filename in filenames:
+                newBase = 'Backup_'+basename(folder)
+                if filename.startswith(newBase) and filename.endswith('.zip'):
+                    continue
+                backup_zip.write(join(foldername, filename))
     backup_zip.close()
     move_folder(pardir+'\\'+'src'+'\\'+'Backup_' + basename(folder)+'.zip', 'D', 'Backup')
 

@@ -1,6 +1,3 @@
-"""
-An auto logger to automatically log into web page
-"""
 import requests
 from bs4 import BeautifulSoup
 

@@ -1,8 +1,3 @@
-"""
-Code to search for the folders whose size is
-Zero bytes
-"""
-
 from os.path import getsize
 from os import walk
 from os.path import abspath
