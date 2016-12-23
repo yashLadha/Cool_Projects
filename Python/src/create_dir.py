@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from shutil import copytree
 from shutil import move
 from os import chdir

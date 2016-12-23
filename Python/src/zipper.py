@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from src.create_dir import move_folder
 from zipfile import ZipFile
 from os.path import abspath
